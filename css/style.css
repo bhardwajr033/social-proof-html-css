@@ -1,0 +1,49 @@
+body{
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+section h1{
+    color: hsl(300, 43%, 22%);
+}
+
+section p{
+    color: hsl(303, 10%, 53%);
+}
+
+aside{
+    color: hsl(300, 43%, 22%);
+}
+
+aside div{
+    background-color: hsl(300, 24%, 96%);
+}
+
+article{
+    display: flex;
+}
+
+article div{
+    background-color: hsl(300, 43%, 22%);
+    justify-content: space-between;
+}
+
+.name{
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+
+.verified{
+    color: hsl(333, 80%, 67%);
+}
+
+article p{
+    color :hsl(0, 0%, 100%);
+}
