@@ -7,6 +7,15 @@ body {
   margin: 5% 10% 0 10%;
 }
 
+body {
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 350px 350px , 700px 700px;
+}
+
 section {
   display: flex;
   flex-direction: row;
@@ -95,15 +104,15 @@ article div {
   margin-left: 20px;
 }
 
-.firstReview{
-    margin-top: -2%;
-    margin-bottom: 2%;
+.firstReview {
+  margin-top: -2%;
+  margin-bottom: 2%;
 }
 
 .secondReview {
   margin-left: 2%;
   margin-top: -1%;
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
 
 .thirdReview {
@@ -124,4 +133,113 @@ article p {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 25px;
+}
+
+@media (max-width: 375px) {
+  body {
+    text-align: center;
+  }
+
+  body {
+    background-image: url(/images/bg-pattern-top-mobile.svg),
+      url(/images/bg-pattern-bottom-mobile.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 300px 300px , 420px 420px;
+  }
+
+  section,
+  article {
+    flex-direction: column;
+  }
+
+  section {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .firstBlock {
+    width: auto;
+  }
+
+  aside {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  aside div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-between;
+  }
+
+  .stars {
+    flex-direction: row;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .stars img {
+    margin: 5px;
+  }
+
+  aside div span {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .firstRating,
+  .secondRating,
+  .thirdRating {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  article {
+    height: 720px;
+  }
+
+  .info img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info span {
+    font-size: 18px;
+  }
+
+  .verified {
+    margin-top: 5px;
+  }
+
+  article p {
+    text-align: left;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .firstReview,
+  .secondReview {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .secondReview,
+  .thirdReview {
+    margin-left: 0;
+    margin-top: 15px;
+  }
 }
